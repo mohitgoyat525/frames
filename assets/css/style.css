@@ -1,43 +1,85 @@
 @import url(https://db.onlinewebfonts.com/c/b596fe7f763c7633f489a1acdbb13c70?family=Maison+Neue+Demi);
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none ;
-    text-decoration: none;
-    font-family: "Maison Neue", sans-serif;
+body {
+  font-family: "Maison Neue", sans-serif;
 }
-.container{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Maison Neue", sans-serif;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
-    flex-direction: row;
+
+section {
+  min-height: 100vh;
+
+  align-content: center;
 }
-.col-4{
-    width:33.33%;
-    padding-left: 12px;
-    padding-right: 12px;
+.container {
+  max-width: 1440px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
 }
-.text-center{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    min-height: 100vh;
-    
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  flex-direction: row;
 }
-.img-box-one {
+.col-4 {
+  width: 33.3333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* card_1 */
+.Img-box-one {
   background-image: url(/assets/images/png/super-market.png);
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
- max-width: 440px;
+  max-width: 440px;
+  height: 551px;
+  display: flex;
+  align-items: last baseline;
+  padding: 0 29px 29px;
+}
+.card-1-whiteBox {
+  background: white;
+  text-align: start;
+  padding: 37px 29px 32px 28px;
+  border-radius: 25px;
+}
+.read_more {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding-top: 66px;
+}
+.pt_15 {
+  padding-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.max_w_315 {
+  max-width: 315px;
+  text-align: start;
+}
+
+/* card_2 */
+.Img-box-two {
+  background-image: url(/assets/images/png/working-people.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  max-width: 440px;
   height: 551px;
   display: flex;
   align-items: last baseline;
@@ -45,81 +87,55 @@
   padding-right: 29px;
   padding-bottom: 29px;
 }
-.white-box{
-    background-color: white;
+.card-2-whiteBox {
+  background: white;
+  text-align: start;
+  padding: 37px 29px 29px 28px;
+  border-radius: 25px;
+}
+/* card_3 */
+.Img-box-three{
+  background-image: url(/assets/images/png/ecomerse.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  max-width: 440px;
+  height: 551px;
+  display: flex;
+  align-items: last baseline;
+
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-bottom: 29px;
+}
+.card-3-whiteBox {
+  background: white;
+  text-align: start;
+  padding: 37px 29px 29px 28px;
+  border-radius: 25px;
+}
+@media (max-width: 992px) {
+  .row {
+    flex-wrap: wrap;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    border-radius: 25px;
-    width: 100%;
-    
-
-}
-.info-box{
-    padding-left: 29px;
-    padding-right: 28px;
-    padding-top: 35px;
-    padding-bottom: 29px;
-}
-.max-w-325{
-    max-width: 325px;
-}
-.max-w-315{
-    max-width: 315px;
-}
-.pt-81{
-    padding-top: 81px;
-}
-.img-box{
+    align-items: center;
+  }
+  .Img-box-one,
+  .Img-box-two,
+  .Img-box-three {
+    max-width: none;
+    text-align: center;
     display: flex;
+    justify-content: center;
+  }
+  .col-lg-6 {
+    width: 50%;
+    padding-top: 10px;
+  }
 }
-.img-box-two{
-    background-image: url(/assets/images/png/working-people.png);
-      background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
- max-width: 440px;
-  height: 551px;
-  display: flex;
-  align-items: last baseline;
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-bottom: 29px;
-}
-.img-box-three{
-    background-image: url(/assets/images/png/ecomerse.png);
-          background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
- max-width: 440px;
-  height: 551px;
-  display: flex;
-  align-items: last baseline;
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-bottom: 29px;
-}
-.pt-60{
-    padding-top: 60px;
-}
-
-/*  */
-@media (max-width:992) {
-    .col-md-6{
-        max-width: 50%;
-        padding-left: 12px;
-        padding-right: 12px;
-    } 
- 
-}
-@media (max-width:576) {
-    .col-sm-12{
-        width: 100%;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-    .img-box{
-        flex-wrap: wrap;
-    }
+@media (max-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
 }
