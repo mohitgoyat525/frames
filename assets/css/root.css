@@ -15,19 +15,23 @@
     font-weight: var(--fw-semibold);
     color: var(--text-light-green);
     padding-bottom: 15px;
+    line-height: 130%;
 }
 .card-info{
     font-weight: var(--fw-normal);
     font-size: var(--md);
     color: var(--text-black);
     padding-bottom: 15px;
+    line-height: 100%;
 }
 .card-litle-info{
     font-weight: var(--fw-bold);
     font-size: var(--sm);
     color: var(--text-black);
+    line-height: 130%;
 }
 .card-read-more{
     font-size: var(--sm);
     font-weight: var(--fw-semibold);
+    line-height: 130%;
 }
