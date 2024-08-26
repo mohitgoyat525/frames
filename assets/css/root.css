@@ -1,0 +1,33 @@
+:root{
+    --sm:15px;
+    --md:30px;
+    /* --font-size */
+    --fw-normal:300;
+    --fw-bold:400;
+    --fw-semibold:600;
+    /* ---color */
+    --text-light-green:#00afb5;
+    --text-black:#000000;
+
+}
+.card-heading{
+    font-size: var(--sm);
+    font-weight: var(--fw-semibold);
+    color: var(--text-light-green);
+    padding-bottom: 15px;
+}
+.card-info{
+    font-weight: var(--fw-normal);
+    font-size: var(--md);
+    color: var(--text-black);
+    padding-bottom: 15px;
+}
+.card-litle-info{
+    font-weight: var(--fw-bold);
+    font-size: var(--sm);
+    color: var(--text-black);
+}
+.card-read-more{
+    font-size: var(--sm);
+    font-weight: var(--fw-semibold);
+}
